@@ -1,0 +1,12 @@
+<div class="mainhead"><br>
+<h1> Graph output </h1>
+<br>
+</div>
+<br>
+
+<% @student.each do |s|%>
+
+<div style="border: 1px solid black; float:left; margin:2px; height:#{s.height}; color:#{s.color}; width: #{s.weight}"><%=s.name%><br><%=s.gpa%> </div>
+<%end%>
+<br>
+<%=link_to "Home", root_path, class: "linkbtn1" %>

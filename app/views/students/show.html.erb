@@ -1,0 +1,26 @@
+<html>
+<head>
+<%= stylesheet_link_tag('index', :media=>'all')%>
+</head>
+
+<body>
+<div class ="mainhead">
+	<br>
+<h1><%= @student.name %></h1><br>
+</div>
+<br>
+
+Height: <%=@student.height%><br>
+Weight: <%=@student.weight%><br>
+Color: <%=@student.color%><br>
+Gpa: <%=@student.gpa%><br>
+Description: <%=@student.description%><br>
+<hr>
+
+<br>
+
+<%= link_to "Edit Info", edit_student_path(@student),class: "linkbtn1"%>
+<%= link_to "Home", root_path,class: "linkbtn1"%>
+
+</body>
+</html>

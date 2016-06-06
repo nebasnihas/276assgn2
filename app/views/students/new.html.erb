@@ -1,0 +1,28 @@
+<div class="mainhead">
+<br>
+<h1>Add new student data</h1>
+<br>
+</div>
+<br>
+
+<%= form_for @student do |f| %>
+	<%= f.label :name %><br>
+	<%= f.text_field :name %><br>
+	<br>
+	<%= f.label :weight %><br>
+	<%= f.text_field :weight %><br>
+	<br>
+	<%= f.label :height %><br>
+	<%= f.text_field :height %><br>
+	<br>
+	<%= f.label :color %><br>
+	<%= f.text_field :color %><br>
+	<br>
+	<%= f.label :gpa %><br>
+	<%= f.text_field :gpa %><br>
+	<br>
+	<%= f.label :description %><br>
+	<%= f.text_area :description %><br>
+	<br>
+	<%= f.submit %>
+<%end %>
